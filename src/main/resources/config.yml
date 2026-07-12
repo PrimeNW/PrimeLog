@@ -1,0 +1,44 @@
+# =========================================
+#             PrimeLog Konfigürasyonu
+# =========================================
+
+# Discord bot token'ınız (Discord Developer Portal > Applications > Bot)
+# ÖNEMLİ: Bu dosyayı ASLA başkasıyla paylaşmayın, GitHub'a yüklemeyin!
+bot-token: "BURAYA_BOT_TOKENINI_YAZ"
+
+# Log mesajlarının gönderileceği Discord kanal ID'si
+log-channel-id: "0"
+
+# Konsol komutlarının yazılacağı ve çalıştırılacağı Discord kanal ID'si
+console-channel-id: "0"
+
+# Konsol kanalını kimlerin kullanabileceğini kısıtlamak için Discord user ID listesi
+# Boş bırakırsan (yani liste boşsa) sadece "sadece-yetkili-idler-calissin: true" ise kısıtlama uygulanır
+authorized-console-users:
+  - "DISCORD_USER_ID_BURAYA"
+
+# true ise sadece yukarıdaki listedeki kullanıcılar konsol komutu çalıştırabilir
+sadece-yetkili-idler-calissin: true
+
+# Hangi olayların loglanacağı
+log-events:
+  join-quit: true
+  chat: true
+  death: true
+  command: true
+  block-break: false
+  block-place: false
+  advancement: true
+  kick-ban: true
+
+# Bot durum mesajı (oyun içi "oynuyor" yazısı)
+bot-activity: "sunucuyu izliyor"
+
+# Embed renkleri (decimal renk kodu)
+colors:
+  join: 3066993      # yeşil
+  quit: 15158332     # kırmızı
+  chat: 3447003      # mavi
+  death: 10038562    # koyu kırmızı
+  command: 15844367  # sarı
+  console: 9807270   # gri

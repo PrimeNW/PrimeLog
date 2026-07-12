@@ -1,0 +1,17 @@
+name: PrimeLog
+main: com.example.discordlogger.PrimeLogPlugin
+version: 1.0.0
+api-version: 1.13
+author: Sen
+description: Sunucu olaylarını Discord'a loglar ve Discord üzerinden konsol erişimi sağlar.
+
+commands:
+  primelog:
+    description: PrimeLog yönetim komutu
+    usage: /primelog reload
+    permission: primelog.admin
+
+permissions:
+  primelog.admin:
+    description: PrimeLog yönetim yetkisi
+    default: op
